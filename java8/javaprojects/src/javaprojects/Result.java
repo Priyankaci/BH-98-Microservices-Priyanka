@@ -4,6 +4,7 @@ import java.beans.Statement;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Result {
@@ -25,6 +26,9 @@ public class Result {
 		Map<Department,List<Std>> studentsDepartment= students.stream().collect(Collectors.groupingBy(Std::getDept_id));
 	
 		System.out.println(studentsDepartment);
+		
+		
+	
 	}
 
 }
